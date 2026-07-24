@@ -1,10 +1,27 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
 import { useRef } from "react";
 
 const WORDS =
   "We partner with founders, operators, and creative teams to shape brands that don't blur into the noise — through strategy, identity, and interfaces engineered to feel inevitable.".split(
     " "
   );
+
+function Word({
+  progress,
+  range,
+  children,
+}: {
+  progress: MotionValue<number>;
+  range: [number, number];
+  children: string;
+}) {
+  const opacity = useTransform(progress, range, [0.18, 1]);
+  return (
+    <motion.span style={{ opacity }} className="inline-block">
+      {children}&nbsp;
+    </motion.span>
+  );
+}
 
 export function Statement() {
   const ref = useRef<HTMLDivElement>(null);
@@ -24,11 +41,10 @@ export function Statement() {
           {WORDS.map((w, i) => {
             const start = i / WORDS.length;
             const end = start + 1 / WORDS.length;
-            const opacity = useTransform(scrollYProgress, [start, end], [0.18, 1]);
             return (
-              <motion.span key={i} style={{ opacity }} className="inline-block">
-                {w}&nbsp;
-              </motion.span>
+              <Word key={i} progress={scrollYProgress} range={[start, end]}>
+                {w}
+              </Word>
             );
           })}
         </p>
