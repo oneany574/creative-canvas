@@ -1,24 +1,56 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Preloader } from "@/components/site/Preloader";
+import { Navigation } from "@/components/site/Navigation";
+import { Hero } from "@/components/site/Hero";
+import { Marquee } from "@/components/site/Marquee";
+import { Statement } from "@/components/site/Statement";
+import { Services } from "@/components/site/Services";
+import { Work } from "@/components/site/Work";
+import { Process } from "@/components/site/Process";
+import { Testimonials } from "@/components/site/Testimonials";
+import { CTA } from "@/components/site/CTA";
+import { Footer } from "@/components/site/Footer";
+import { SmoothScroll } from "@/components/site/SmoothScroll";
+import { CustomCursor } from "@/components/site/CustomCursor";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "Ostium — Independent design studio for brands that move" },
+      {
+        name: "description",
+        content:
+          "Ostium is an independent studio crafting identity, digital, and product experiences for ambitious founders. Selected work, method, and studio.",
+      },
+      { property: "og:title", content: "Ostium — Independent design studio" },
+      {
+        property: "og:description",
+        content:
+          "Brand strategy, identity, digital experience, and creative technology, from Lisbon and New York.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
+  component: Home,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function Home() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="relative">
+      <Preloader />
+      <SmoothScroll />
+      <CustomCursor />
+      <Navigation />
+      <Hero />
+      <Marquee />
+      <Statement />
+      <Services />
+      <Work />
+      <Process />
+      <Testimonials />
+      <CTA />
+      <Footer />
+    </main>
   );
 }
