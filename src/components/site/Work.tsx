@@ -1,51 +1,11 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
-import work1 from "@/assets/work-1.jpg";
-import work2 from "@/assets/work-2.jpg";
-import work3 from "@/assets/work-3.jpg";
-import work4 from "@/assets/work-4.jpg";
+import { useRef, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { FadeIn } from "./RevealText";
+import { projects, type Project } from "@/lib/projects";
+import { CaseStudyModal } from "./CaseStudyModal";
 
-const projects = [
-  {
-    n: "01",
-    name: "Meridian",
-    cat: "Brand · Web",
-    year: "2026",
-    desc: "Rebranding a longevity clinic into a quiet, editorial institution.",
-    img: work1,
-    span: "col-span-12 md:col-span-8 aspect-[4/5]",
-  },
-  {
-    n: "02",
-    name: "Fluoro",
-    cat: "Product · Motion",
-    year: "2025",
-    desc: "A design system and motion language for a category-defining audio app.",
-    img: work2,
-    span: "col-span-12 md:col-span-4 md:mt-32 aspect-[3/4]",
-  },
-  {
-    n: "03",
-    name: "North Grove",
-    cat: "Identity · Packaging",
-    year: "2025",
-    desc: "Warm typographic identity for an independent apothecary in Copenhagen.",
-    img: work3,
-    span: "col-span-12 md:col-span-5 aspect-[4/5]",
-  },
-  {
-    n: "04",
-    name: "Lumen OS",
-    cat: "Product · WebGL",
-    year: "2024",
-    desc: "A creative-tools platform with real-time canvas and node-based motion.",
-    img: work4,
-    span: "col-span-12 md:col-span-7 md:mt-40 aspect-[4/3]",
-  },
-];
-
-function ProjectCard({ p }: { p: (typeof projects)[number] }) {
+function ProjectCard({ p, onOpen }: { p: Project; onOpen: () => void }) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -56,7 +16,12 @@ function ProjectCard({ p }: { p: (typeof projects)[number] }) {
 
   return (
     <FadeIn className={p.span} y={40}>
-      <div ref={ref} className="group cursor-pointer" data-cursor="View">
+      <div
+        ref={ref}
+        onClick={onOpen}
+        className="group cursor-pointer"
+        data-cursor="Open"
+      >
         <div className="relative w-full overflow-hidden rounded-sm grain h-full">
           <motion.img
             src={p.img}
@@ -85,6 +50,7 @@ function ProjectCard({ p }: { p: (typeof projects)[number] }) {
 }
 
 export function Work() {
+  const [active, setActive] = useState<Project | null>(null);
   return (
     <section id="work" className="border-t border-border py-24 md:py-40">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
@@ -99,21 +65,22 @@ export function Work() {
               <em className="italic">chapters</em>
             </h2>
           </div>
-          <a
-            href="#"
+          <Link
+            to="/work"
             data-cursor="All"
             className="hidden text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline md:inline"
           >
-            Full index (24) ↗
-          </a>
+            Full index ({projects.length}) ↗
+          </Link>
         </div>
 
         <div className="grid grid-cols-12 gap-6 md:gap-10">
           {projects.map((p) => (
-            <ProjectCard key={p.n} p={p} />
+            <ProjectCard key={p.id} p={p} onOpen={() => setActive(p)} />
           ))}
         </div>
       </div>
+      <CaseStudyModal project={active} onClose={() => setActive(null)} />
     </section>
   );
 }
