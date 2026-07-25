@@ -61,7 +61,7 @@ function WorkNotFound() {
 }
 
 function WorkDetail() {
-  const { project: p } = Route.useLoaderData();
+  const { project: p } = Route.useLoaderData() as { project: import("@/lib/projects").Project };
   const idx = projects.findIndex((x) => x.id === p.id);
   const next = projects[(idx + 1) % projects.length];
 
