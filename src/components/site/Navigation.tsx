@@ -1,12 +1,13 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { MagneticButton } from "./MagneticButton";
 
 const links = [
-  { label: "Work", href: "#work" },
-  { label: "Services", href: "#services" },
-  { label: "Studio", href: "#studio" },
-  { label: "Contact", href: "#contact" },
+  { label: "Work", href: "/work", route: true },
+  { label: "Services", href: "/#services", route: false },
+  { label: "Studio", href: "/#studio", route: false },
+  { label: "Contact", href: "/contact", route: true },
 ];
 
 export function Navigation() {
