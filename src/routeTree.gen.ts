@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorkIndexRouteImport } from './routes/work.index'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as WorkIdRouteImport } from './routes/work.$id'
 
 const ContactRoute = ContactRouteImport.update({
@@ -29,6 +30,11 @@ const WorkIndexRoute = WorkIndexRouteImport.update({
   path: '/work/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WorkIdRoute = WorkIdRouteImport.update({
   id: '/work/$id',
   path: '/work/$id',
@@ -39,12 +45,14 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/work/$id': typeof WorkIdRoute
+  '/blog/': typeof BlogIndexRoute
   '/work/': typeof WorkIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/work/$id': typeof WorkIdRoute
+  '/blog': typeof BlogIndexRoute
   '/work': typeof WorkIndexRoute
 }
 export interface FileRoutesById {
@@ -52,20 +60,22 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/work/$id': typeof WorkIdRoute
+  '/blog/': typeof BlogIndexRoute
   '/work/': typeof WorkIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact' | '/work/$id' | '/work/'
+  fullPaths: '/' | '/contact' | '/work/$id' | '/blog/' | '/work/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/work/$id' | '/work'
-  id: '__root__' | '/' | '/contact' | '/work/$id' | '/work/'
+  to: '/' | '/contact' | '/work/$id' | '/blog' | '/work'
+  id: '__root__' | '/' | '/contact' | '/work/$id' | '/blog/' | '/work/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactRoute: typeof ContactRoute
   WorkIdRoute: typeof WorkIdRoute
+  BlogIndexRoute: typeof BlogIndexRoute
   WorkIndexRoute: typeof WorkIndexRoute
 }
 
@@ -92,6 +102,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WorkIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/work/$id': {
       id: '/work/$id'
       path: '/work/$id'
@@ -106,6 +123,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactRoute: ContactRoute,
   WorkIdRoute: WorkIdRoute,
+  BlogIndexRoute: BlogIndexRoute,
   WorkIndexRoute: WorkIndexRoute,
 }
 export const routeTree = rootRouteImport
