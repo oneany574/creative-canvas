@@ -4,7 +4,7 @@ import { Footer } from "@/components/site/Footer";
 import { SmoothScroll } from "@/components/site/SmoothScroll";
 import { CustomCursor } from "@/components/site/CustomCursor";
 import { FadeIn } from "@/components/site/RevealText";
-import { getPost, posts } from "@/lib/posts";
+import { getPost, posts, type Post } from "@/lib/posts";
 
 export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params }) => {
@@ -56,7 +56,7 @@ function PostNotFound() {
 }
 
 function BlogDetail() {
-  const { post } = Route.useLoaderData();
+  const { post } = Route.useLoaderData() as { post: Post };
   const index = posts.findIndex((p) => p.slug === post.slug);
   const next = posts[(index + 1) % posts.length];
 
