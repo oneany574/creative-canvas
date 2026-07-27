@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as LoginRouteImport } from './routes/login'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorkIndexRouteImport } from './routes/work.index'
@@ -16,6 +17,11 @@ import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as WorkIdRouteImport } from './routes/work.$id'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -50,6 +56,7 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
+  '/login': typeof LoginRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/work/$id': typeof WorkIdRoute
   '/blog/': typeof BlogIndexRoute
@@ -58,6 +65,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
+  '/login': typeof LoginRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/work/$id': typeof WorkIdRoute
   '/blog': typeof BlogIndexRoute
@@ -67,6 +75,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
+  '/login': typeof LoginRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/work/$id': typeof WorkIdRoute
   '/blog/': typeof BlogIndexRoute
@@ -77,16 +86,25 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/contact'
+    | '/login'
     | '/blog/$slug'
     | '/work/$id'
     | '/blog/'
     | '/work/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/blog/$slug' | '/work/$id' | '/blog' | '/work'
+  to:
+    | '/'
+    | '/contact'
+    | '/login'
+    | '/blog/$slug'
+    | '/work/$id'
+    | '/blog'
+    | '/work'
   id:
     | '__root__'
     | '/'
     | '/contact'
+    | '/login'
     | '/blog/$slug'
     | '/work/$id'
     | '/blog/'
@@ -96,6 +114,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactRoute: typeof ContactRoute
+  LoginRoute: typeof LoginRoute
   BlogSlugRoute: typeof BlogSlugRoute
   WorkIdRoute: typeof WorkIdRoute
   BlogIndexRoute: typeof BlogIndexRoute
@@ -104,6 +123,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -152,6 +178,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactRoute: ContactRoute,
+  LoginRoute: LoginRoute,
   BlogSlugRoute: BlogSlugRoute,
   WorkIdRoute: WorkIdRoute,
   BlogIndexRoute: BlogIndexRoute,

@@ -6,9 +6,11 @@ import { MagneticButton } from "./MagneticButton";
 const links = [
   { label: "Work", href: "/work", route: true },
   { label: "Services", href: "/#services", route: false },
-  { label: "Studio", href: "/#studio", route: false },
+  { label: "Journal", href: "/blog", route: true },
   { label: "Contact", href: "/contact", route: true },
+  { label: "Login", href: "/login", route: true },
 ];
+
 
 export function Navigation() {
   const [open, setOpen] = useState(false);
