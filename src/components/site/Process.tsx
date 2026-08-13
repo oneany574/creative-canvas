@@ -2,11 +2,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const steps = [
-  { n: "01", t: "Discover", d: "Immersion, interviews, and honest audits. We start where the brand actually is, not where the deck says it is." },
-  { n: "02", t: "Define", d: "Strategy, positioning, narrative. A single sentence the whole company can rally around." },
-  { n: "03", t: "Design", d: "Identity systems, editorial art direction, and interface language — built to scale." },
-  { n: "04", t: "Develop", d: "Production-grade builds. Motion, WebGL, and CMS engineered for teams to own." },
-  { n: "05", t: "Deliver", d: "Launch choreography, documentation, and a partnership that outlasts the release." },
+  { n: "01", t: "Scope", d: "Read the code, the tickets, and the traces before proposing anything. Most problems are already documented by the people living with them." },
+  { n: "02", t: "Architect", d: "A short design doc: constraints, two rejected options, one recommendation. Decisions get written down before they get typed." },
+  { n: "03", t: "Build", d: "Small vertical slices behind flags, typed end to end, reviewed daily. Something demoable in week one, always." },
+  { n: "04", t: "Harden", d: "Integration tests on the seams, load tests on the hot path, dashboards and alerts before launch — not after the first incident." },
+  { n: "05", t: "Hand over", d: "Runbooks, ADRs, and pairing sessions so the team owns it completely once I step back." },
 ];
 
 export function Process() {
@@ -20,17 +20,17 @@ export function Process() {
         <div className="mb-16 grid grid-cols-12 items-end gap-6 md:mb-28">
           <div className="col-span-12 md:col-span-6">
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-              [ 05 — Method ]
+              [ 05 — How I ship ]
             </p>
             <h2 className="mt-4 font-display text-[clamp(2.5rem,7vw,6rem)] leading-[0.95] tracking-[-0.02em]">
-              Five moves,
+              Five steps,
               <br />
-              <em className="italic text-accent">one arc.</em>
+              <em className="italic text-accent">one loop.</em>
             </h2>
           </div>
           <p className="col-span-12 max-w-md text-muted-foreground md:col-span-5 md:col-start-8">
-            The process is deliberately small — enough structure to protect the
-            work, enough looseness to let taste and intuition lead.
+            Deliberately lightweight — enough process to keep changes reversible
+            and reviewable, not enough to slow a release down.
           </p>
         </div>
 

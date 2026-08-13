@@ -4,19 +4,19 @@ import portrait from "@/assets/portrait.jpg";
 
 const quotes = [
   {
-    q: "They didn't just design the brand — they gave us a language the whole company now speaks fluently.",
+    q: "Aarav rewrote our ingestion pipeline and left it more understandable than the version it replaced. Our p95 dropped by an order of magnitude.",
     name: "Amelia Vasquez",
-    role: "CEO, Meridian",
+    role: "VP Engineering, Northbeam",
   },
   {
-    q: "Rare taste, rarer discipline. Every detail was fought for. The result feels inevitable in hindsight.",
+    q: "He is the rare engineer who argues for the simpler design and then proves it with numbers. Our release cadence went from monthly to daily.",
     name: "Daniel Chen",
-    role: "Founder, Fluoro",
+    role: "CTO, Fluoro Financial",
   },
   {
-    q: "The kind of partner that raises the ceiling of what your team believes is possible.",
+    q: "Six months after he handed off the platform, our team still hasn't needed to page him. That is the highest compliment I can give.",
     name: "Ines Duarte",
-    role: "Head of Product, Lumen",
+    role: "Head of Platform, Atlas Health",
   },
 ];
 
@@ -27,7 +27,7 @@ export function Testimonials() {
     <section className="border-t border-border py-24 md:py-40">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         <div className="mb-16 flex items-baseline justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-          <span>[ 06 — Words ]</span>
+          <span>[ 06 — References ]</span>
           <span>{String(i + 1).padStart(2, "0")} / {String(quotes.length).padStart(2, "0")}</span>
         </div>
 

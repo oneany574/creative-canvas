@@ -11,16 +11,16 @@ import { projects, type Project } from "@/lib/projects";
 export const Route = createFileRoute("/work/")({
   head: () => ({
     meta: [
-      { title: "Work — Ostium Studio" },
+      { title: "Work — Aarav Mehta" },
       {
         name: "description",
         content:
-          "Selected case studies from Ostium — brand, product, and creative technology work for ambitious founders.",
+          "Selected engineering projects by Aarav Mehta — full-stack platforms, developer tooling, and infrastructure work.",
       },
-      { property: "og:title", content: "Work — Ostium Studio" },
+      { property: "og:title", content: "Work — Aarav Mehta" },
       {
         property: "og:description",
-        content: "Selected case studies from Ostium Studio.",
+        content: "Selected engineering projects by Aarav Mehta.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

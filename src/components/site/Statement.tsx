@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform, type MotionValue } from "framer-motion
 import { useRef } from "react";
 
 const WORDS =
-  "We partner with founders, operators, and creative teams to shape brands that don't blur into the noise — through strategy, identity, and interfaces engineered to feel inevitable.".split(
+  "I work with product teams to turn vague problems into software that holds up in production — clear architecture, typed end to end, observable, and simple enough that the next engineer can move fast in it.".split(
     " "
   );
 
@@ -33,8 +33,8 @@ export function Statement() {
   return (
     <section id="studio" className="mx-auto max-w-[1600px] px-6 py-32 md:px-10 md:py-48">
       <div className="mb-12 flex items-baseline justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground md:mb-20">
-        <span>[ 02 — Manifesto ]</span>
-        <span className="hidden md:inline">Ostium / Studio</span>
+        <span>[ 02 — How I work ]</span>
+        <span className="hidden md:inline">Aarav Mehta / Engineering</span>
       </div>
       <div ref={ref} className="max-w-[1200px]">
         <p className="font-display text-[clamp(1.75rem,4.5vw,4rem)] leading-[1.08] tracking-[-0.02em]">

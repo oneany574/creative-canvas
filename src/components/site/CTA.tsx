@@ -12,11 +12,11 @@ export function CTA() {
       </div>
       <div className="relative mx-auto max-w-[1600px] px-6 md:px-10">
         <div className="mb-10 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-          [ 07 — Let's begin ]
+          [ 07 — Let's talk ]
         </div>
         <FadeIn>
           <h2 className="font-display text-[clamp(3rem,12vw,13rem)] leading-[0.88] tracking-[-0.03em]">
-            Have an idea
+            Got something
             <br />
             <em className="italic">worth building?</em>
           </h2>
@@ -24,11 +24,11 @@ export function CTA() {
         <FadeIn delay={0.15}>
           <div className="mt-12 flex flex-wrap items-center gap-4 md:mt-20">
             <MagneticButton
-              href="mailto:studio@ostium.co"
+              href="mailto:hello@aaravmehta.dev"
               data-cursor="Write"
               className="group inline-flex items-center gap-4 rounded-full bg-foreground px-8 py-5 text-base font-medium text-background md:text-lg"
             >
-              studio@ostium.co
+              hello@aaravmehta.dev
               <span className="grid h-6 w-6 place-items-center rounded-full bg-background/10">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" strokeWidth="1.5" />
@@ -36,7 +36,7 @@ export function CTA() {
               </span>
             </MagneticButton>
             <span className="text-sm text-muted-foreground">
-              Booking selectively for Q3 & Q4 2026.
+              Open to senior & lead roles and select contracts from Q4 2026.
             </span>
           </div>
         </FadeIn>

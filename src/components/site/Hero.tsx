@@ -21,14 +21,14 @@ export function Hero() {
         transition={{ delay: preDelay + 0.6, duration: 1 }}
         className="pointer-events-none absolute inset-x-6 top-24 z-10 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground md:inset-x-10 md:top-28"
       >
-        <span>[ 01 — Independent design studio ]</span>
-        <span className="hidden md:inline">Est. 2019 · Portfolio 2026 ↗</span>
+        <span>[ 01 — Software engineer · Full-stack ]</span>
+        <span className="hidden md:inline">8 yrs shipping · Available Q4 2026 ↗</span>
       </motion.div>
 
       <div className="relative mx-auto grid max-w-[1600px] grid-cols-12 gap-6 px-6 md:px-10">
         <div className="col-span-12 lg:col-span-8">
           <h1 className="font-display text-[clamp(3.25rem,10.5vw,11rem)] leading-[0.92] tracking-[-0.03em]">
-            {["Building", "brands that", <em key="i" className="italic text-accent">move.</em>].map(
+            {["I build", "software that", <em key="i" className="italic text-accent">scales.</em>].map(
               (line, i) => (
                 <span key={i} className="block overflow-hidden">
                   <motion.span
@@ -52,8 +52,9 @@ export function Hero() {
             transition={{ delay: preDelay + 0.6, duration: 0.9 }}
             className="max-w-sm text-pretty text-base text-muted-foreground md:text-lg"
           >
-            Ostium is an independent studio crafting identity, digital, and product experiences
-            for the world's most ambitious founders.
+            I'm Aarav Mehta — a full-stack engineer specialising in TypeScript, React, and
+            distributed backends. Eight years turning ambiguous problems into systems teams
+            can trust.
           </motion.p>
 
           <motion.div
@@ -67,7 +68,7 @@ export function Hero() {
               data-cursor="View"
               className="group inline-flex items-center gap-3 rounded-full bg-foreground px-6 py-3.5 text-sm font-medium text-background transition-colors"
             >
-              See selected work
+              See selected projects
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="transition-transform group-hover:translate-x-0.5">
                 <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" strokeWidth="1.5" />
               </svg>
@@ -77,7 +78,7 @@ export function Hero() {
               data-cursor="Talk"
               className="rounded-full border border-foreground/25 px-6 py-3.5 text-sm transition-colors hover:border-foreground/60"
             >
-              Start a project
+              Get in touch
             </MagneticButton>
           </motion.div>
         </div>
@@ -96,14 +97,14 @@ export function Hero() {
         >
           <img
             src={heroImg}
-            alt="A sculptural orange form curling on a black backdrop"
+            alt="A dark developer workstation with code on screen lit by warm ambient light"
             width={1600}
             height={900}
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-x-6 bottom-6 flex items-end justify-between font-mono text-[10px] uppercase tracking-widest text-white/80 md:inset-x-10 md:bottom-10">
-            <span>◐ Reel 2026</span>
-            <span>00:42 / 03:17</span>
+            <span>◐ Currently — Lead engineer, Northbeam</span>
+            <span>TS · React · Go · K8s</span>
           </div>
         </motion.div>
       </motion.div>

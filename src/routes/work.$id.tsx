@@ -16,7 +16,7 @@ export const Route = createFileRoute("/work/$id")({
     if (!loaderData) {
       return {
         meta: [
-          { title: "Project not found — Ostium" },
+          { title: "Project not found — Aarav Mehta" },
           { name: "robots", content: "noindex" },
         ],
       };
@@ -24,9 +24,9 @@ export const Route = createFileRoute("/work/$id")({
     const p = loaderData.project;
     return {
       meta: [
-        { title: `${p.name} — Ostium Studio` },
+        { title: `${p.name} — Aarav Mehta` },
         { name: "description", content: p.desc },
-        { property: "og:title", content: `${p.name} — Ostium Studio` },
+        { property: "og:title", content: `${p.name} — Aarav Mehta` },
         { property: "og:description", content: p.desc },
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },

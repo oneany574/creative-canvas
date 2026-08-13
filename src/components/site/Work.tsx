@@ -57,12 +57,12 @@ export function Work() {
         <div className="mb-16 flex items-end justify-between gap-6 md:mb-24">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-              [ 04 — Selected work ]
+              [ 04 — Selected projects ]
             </p>
             <h2 className="mt-4 font-display text-[clamp(2.5rem,7vw,6rem)] leading-[0.95] tracking-[-0.02em]">
-              Recent
+              Things I've
               <br />
-              <em className="italic">chapters</em>
+              <em className="italic">shipped</em>
             </h2>
           </div>
           <Link

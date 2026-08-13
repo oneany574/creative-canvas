@@ -4,8 +4,8 @@ import { Link } from "@tanstack/react-router";
 import { MagneticButton } from "./MagneticButton";
 
 const links = [
-  { label: "Work", href: "/work", route: true },
-  { label: "Services", href: "/#services", route: false },
+  { label: "Projects", href: "/work", route: true },
+  { label: "Capabilities", href: "/#services", route: false },
   { label: "Journal", href: "/blog", route: true },
   { label: "Contact", href: "/contact", route: true },
   { label: "Login", href: "/login", route: true },
@@ -39,9 +39,9 @@ export function Navigation() {
       >
         <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-5 md:px-10 md:py-6">
           <Link to="/" className="flex items-baseline gap-2" data-cursor="Home">
-            <span className="font-display text-2xl leading-none">Ostium</span>
+            <span className="font-display text-2xl leading-none">Aarav Mehta</span>
             <span className="hidden font-mono text-[10px] uppercase tracking-widest text-muted-foreground md:inline">
-              Studio ©
+              Software engineer
             </span>
           </Link>
 
@@ -131,8 +131,8 @@ export function Navigation() {
               ))}
             </nav>
             <div className="flex items-center justify-between text-xs uppercase tracking-widest text-muted-foreground">
-              <span>Ostium Studio</span>
-              <span>Lisbon · New York</span>
+              <span>Aarav Mehta</span>
+              <span>Bengaluru · Remote</span>
             </div>
           </motion.div>
         )}

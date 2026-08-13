@@ -16,7 +16,7 @@ export const Route = createFileRoute("/blog/$slug")({
     if (!loaderData) {
       return {
         meta: [
-          { title: "Entry not found — Ostium Journal" },
+          { title: "Entry not found — Aarav Mehta Journal" },
           { name: "robots", content: "noindex" },
         ],
       };
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/blog/$slug")({
     const { post } = loaderData;
     return {
       meta: [
-        { title: `${post.title} — Ostium Journal` },
+        { title: `${post.title} — Aarav Mehta Journal` },
         { name: "description", content: post.excerpt },
         { property: "og:title", content: post.title },
         { property: "og:description", content: post.excerpt },
