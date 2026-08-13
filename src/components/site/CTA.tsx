@@ -12,11 +12,11 @@ export function CTA() {
       </div>
       <div className="relative mx-auto max-w-[1600px] px-6 md:px-10">
         <div className="mb-10 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-          [ 07 — Let's begin ]
+          [ 07 — Let's talk ]
         </div>
         <FadeIn>
           <h2 className="font-display text-[clamp(3rem,12vw,13rem)] leading-[0.88] tracking-[-0.03em]">
-            Have an idea
+            Got something
             <br />
             <em className="italic">worth building?</em>
           </h2>
@@ -36,7 +36,7 @@ export function CTA() {
               </span>
             </MagneticButton>
             <span className="text-sm text-muted-foreground">
-              Booking selectively for Q3 & Q4 2026.
+              Open to senior & lead roles and select contracts from Q4 2026.
             </span>
           </div>
         </FadeIn>
