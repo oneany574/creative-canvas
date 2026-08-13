@@ -21,14 +21,14 @@ export function Hero() {
         transition={{ delay: preDelay + 0.6, duration: 1 }}
         className="pointer-events-none absolute inset-x-6 top-24 z-10 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground md:inset-x-10 md:top-28"
       >
-        <span>[ 01 — Independent design studio ]</span>
-        <span className="hidden md:inline">Est. 2019 · Portfolio 2026 ↗</span>
+        <span>[ 01 — Software engineer · Full-stack ]</span>
+        <span className="hidden md:inline">8 yrs shipping · Available Q4 2026 ↗</span>
       </motion.div>
 
       <div className="relative mx-auto grid max-w-[1600px] grid-cols-12 gap-6 px-6 md:px-10">
         <div className="col-span-12 lg:col-span-8">
           <h1 className="font-display text-[clamp(3.25rem,10.5vw,11rem)] leading-[0.92] tracking-[-0.03em]">
-            {["Building", "brands that", <em key="i" className="italic text-accent">move.</em>].map(
+            {["I build", "software that", <em key="i" className="italic text-accent">scales.</em>].map(
               (line, i) => (
                 <span key={i} className="block overflow-hidden">
                   <motion.span
@@ -52,8 +52,9 @@ export function Hero() {
             transition={{ delay: preDelay + 0.6, duration: 0.9 }}
             className="max-w-sm text-pretty text-base text-muted-foreground md:text-lg"
           >
-            Aarav Mehta is an independent studio crafting identity, digital, and product experiences
-            for the world's most ambitious founders.
+            I'm Aarav Mehta — a full-stack engineer specialising in TypeScript, React, and
+            distributed backends. Eight years turning ambiguous problems into systems teams
+            can trust.
           </motion.p>
 
           <motion.div
