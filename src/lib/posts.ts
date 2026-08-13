@@ -240,4 +240,4 @@ export function getPost(slug: string) {
   return posts.find((p) => p.slug === slug);
 }
 
-export const categories = Array.from(new Set(posts.map((p) => p.category)));
+export const postCategories = Array.from(new Set(posts.map((p) => p.category)));
