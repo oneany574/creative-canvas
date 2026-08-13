@@ -39,7 +39,7 @@ export function Navigation() {
       >
         <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-5 md:px-10 md:py-6">
           <Link to="/" className="flex items-baseline gap-2" data-cursor="Home">
-            <span className="font-display text-2xl leading-none">Ostium</span>
+            <span className="font-display text-2xl leading-none">Aarav Mehta</span>
             <span className="hidden font-mono text-[10px] uppercase tracking-widest text-muted-foreground md:inline">
               Studio ©
             </span>
@@ -131,7 +131,7 @@ export function Navigation() {
               ))}
             </nav>
             <div className="flex items-center justify-between text-xs uppercase tracking-widest text-muted-foreground">
-              <span>Ostium Studio</span>
+              <span>Aarav Mehta</span>
               <span>Lisbon · New York</span>
             </div>
           </motion.div>

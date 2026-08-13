@@ -34,7 +34,7 @@ export function Preloader() {
               transition={{ duration: 0.6 }}
               className="font-display text-6xl md:text-8xl"
             >
-              Ostium
+              Aarav Mehta
             </motion.span>
             <span className="font-mono text-xs text-muted-foreground tabular-nums">
               {String(pct).padStart(3, "0")}

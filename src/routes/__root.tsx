@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Ostium — Independent design studio" },
+      { title: "Aarav Mehta — Independent design studio" },
       {
         name: "description",
         content:
-          "Ostium is an independent studio crafting identity, digital, and product experiences for ambitious founders.",
+          "Aarav Mehta is an independent studio crafting identity, digital, and product experiences for ambitious founders.",
       },
-      { name: "author", content: "Ostium Studio" },
+      { name: "author", content: "Aarav Mehta" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

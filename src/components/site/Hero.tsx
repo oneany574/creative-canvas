@@ -52,7 +52,7 @@ export function Hero() {
             transition={{ delay: preDelay + 0.6, duration: 0.9 }}
             className="max-w-sm text-pretty text-base text-muted-foreground md:text-lg"
           >
-            Ostium is an independent studio crafting identity, digital, and product experiences
+            Aarav Mehta is an independent studio crafting identity, digital, and product experiences
             for the world's most ambitious founders.
           </motion.p>
 

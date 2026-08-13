@@ -16,13 +16,13 @@ import { CustomCursor } from "@/components/site/CustomCursor";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ostium — Independent design studio for brands that move" },
+      { title: "Aarav Mehta — Independent design studio for brands that move" },
       {
         name: "description",
         content:
-          "Ostium is an independent studio crafting identity, digital, and product experiences for ambitious founders. Selected work, method, and studio.",
+          "Aarav Mehta is an independent studio crafting identity, digital, and product experiences for ambitious founders. Selected work, method, and studio.",
       },
-      { property: "og:title", content: "Ostium — Independent design studio" },
+      { property: "og:title", content: "Aarav Mehta — Independent design studio" },
       {
         property: "og:description",
         content:

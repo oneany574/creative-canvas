@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="border-t border-border">
       <div className="mx-auto grid max-w-[1600px] grid-cols-12 gap-8 px-6 py-16 md:px-10 md:py-24">
         <div className="col-span-12 md:col-span-5">
-          <div className="font-display text-6xl md:text-8xl">Ostium.</div>
+          <div className="font-display text-6xl md:text-8xl">Aarav Mehta.</div>
           <p className="mt-6 max-w-sm text-sm text-muted-foreground">
             An independent design studio moving quietly between brand, product,
             and experience.
@@ -50,7 +50,7 @@ export function Footer() {
 
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-[1600px] flex-wrap items-center justify-between gap-4 px-6 py-6 font-mono text-[10px] uppercase tracking-widest text-muted-foreground md:px-10">
-          <span>© 2019—2026 Ostium Studio</span>
+          <span>© 2019—2026 Aarav Mehta</span>
           <span>Made with intention · Lisbon ⇢ Everywhere</span>
         </div>
       </div>

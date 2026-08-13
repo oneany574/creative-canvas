@@ -10,16 +10,16 @@ import { FadeIn } from "@/components/site/RevealText";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Ostium Studio" },
+      { title: "Contact — Aarav Mehta" },
       {
         name: "description",
         content:
-          "Start a project with Ostium. Tell us about your company, ambition, and timeline — we reply within two business days.",
+          "Start a project with Aarav Mehta. Tell us about your company, ambition, and timeline — we reply within two business days.",
       },
-      { property: "og:title", content: "Contact — Ostium Studio" },
+      { property: "og:title", content: "Contact — Aarav Mehta" },
       {
         property: "og:description",
-        content: "Start a project with Ostium Studio.",
+        content: "Start a project with Aarav Mehta.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -129,11 +129,11 @@ function ContactPage() {
                 Email
               </p>
               <a
-                href="mailto:studio@ostium.co"
+                href="mailto:hello@aaravmehta.dev"
                 data-cursor="Write"
                 className="mt-2 block font-display text-2xl md:text-3xl hover:italic"
               >
-                studio@ostium.co
+                hello@aaravmehta.dev
               </a>
             </div>
             <div>
@@ -322,8 +322,8 @@ function ContactPage() {
                   </button>
                   <span className="text-xs text-muted-foreground">
                     Or email{" "}
-                    <a href="mailto:studio@ostium.co" className="underline underline-offset-4">
-                      studio@ostium.co
+                    <a href="mailto:hello@aaravmehta.dev" className="underline underline-offset-4">
+                      hello@aaravmehta.dev
                     </a>
                   </span>
                 </div>

@@ -34,7 +34,7 @@ export function Statement() {
     <section id="studio" className="mx-auto max-w-[1600px] px-6 py-32 md:px-10 md:py-48">
       <div className="mb-12 flex items-baseline justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground md:mb-20">
         <span>[ 02 — Manifesto ]</span>
-        <span className="hidden md:inline">Ostium / Studio</span>
+        <span className="hidden md:inline">Aarav Mehta / Studio</span>
       </div>
       <div ref={ref} className="max-w-[1200px]">
         <p className="font-display text-[clamp(1.75rem,4.5vw,4rem)] leading-[1.08] tracking-[-0.02em]">

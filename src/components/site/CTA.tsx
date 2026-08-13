@@ -24,11 +24,11 @@ export function CTA() {
         <FadeIn delay={0.15}>
           <div className="mt-12 flex flex-wrap items-center gap-4 md:mt-20">
             <MagneticButton
-              href="mailto:studio@ostium.co"
+              href="mailto:hello@aaravmehta.dev"
               data-cursor="Write"
               className="group inline-flex items-center gap-4 rounded-full bg-foreground px-8 py-5 text-base font-medium text-background md:text-lg"
             >
-              studio@ostium.co
+              hello@aaravmehta.dev
               <span className="grid h-6 w-6 place-items-center rounded-full bg-background/10">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" strokeWidth="1.5" />

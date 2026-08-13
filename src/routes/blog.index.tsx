@@ -21,13 +21,13 @@ export const Route = createFileRoute("/blog/")({
   validateSearch: zodValidator(blogSearchSchema),
   head: () => ({
     meta: [
-      { title: "Journal — Essays on Brand & Craft | Ostium Studio" },
+      { title: "Journal — Essays on Brand & Craft | Aarav Mehta" },
       {
         name: "description",
         content:
-          "Essays and field notes from Ostium Studio on brand systems, interaction design, typography, and how we run creative projects.",
+          "Essays and field notes from Aarav Mehta on brand systems, interaction design, typography, and how we run creative projects.",
       },
-      { property: "og:title", content: "Journal — Ostium Studio" },
+      { property: "og:title", content: "Journal — Aarav Mehta" },
       {
         property: "og:description",
         content:
