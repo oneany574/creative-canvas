@@ -1,18 +1,20 @@
 export function Marquee() {
   const items = [
-    "Brand systems",
+    "TypeScript",
     "★",
-    "Digital products",
+    "React",
     "★",
-    "Art direction",
+    "Node.js",
     "★",
-    "Motion & interaction",
+    "Go",
     "★",
-    "Editorial",
+    "PostgreSQL",
     "★",
-    "Web design",
+    "Kubernetes",
     "★",
-    "Creative technology",
+    "AWS",
+    "★",
+    "GraphQL",
     "★",
   ];
   return (

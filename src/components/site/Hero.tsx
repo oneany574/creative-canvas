@@ -68,7 +68,7 @@ export function Hero() {
               data-cursor="View"
               className="group inline-flex items-center gap-3 rounded-full bg-foreground px-6 py-3.5 text-sm font-medium text-background transition-colors"
             >
-              See selected work
+              See selected projects
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="transition-transform group-hover:translate-x-0.5">
                 <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" strokeWidth="1.5" />
               </svg>
@@ -78,7 +78,7 @@ export function Hero() {
               data-cursor="Talk"
               className="rounded-full border border-foreground/25 px-6 py-3.5 text-sm transition-colors hover:border-foreground/60"
             >
-              Start a project
+              Get in touch
             </MagneticButton>
           </motion.div>
         </div>
@@ -97,14 +97,14 @@ export function Hero() {
         >
           <img
             src={heroImg}
-            alt="A sculptural orange form curling on a black backdrop"
+            alt="A dark developer workstation with code on screen lit by warm ambient light"
             width={1600}
             height={900}
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-x-6 bottom-6 flex items-end justify-between font-mono text-[10px] uppercase tracking-widest text-white/80 md:inset-x-10 md:bottom-10">
-            <span>◐ Reel 2026</span>
-            <span>00:42 / 03:17</span>
+            <span>◐ Currently — Lead engineer, Northbeam</span>
+            <span>TS · React · Go · K8s</span>
           </div>
         </motion.div>
       </motion.div>
