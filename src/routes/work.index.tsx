@@ -15,12 +15,12 @@ export const Route = createFileRoute("/work/")({
       {
         name: "description",
         content:
-          "Selected case studies from Aarav Mehta — brand, product, and creative technology work for ambitious founders.",
+          "Selected engineering projects by Aarav Mehta — full-stack platforms, developer tooling, and infrastructure work.",
       },
       { property: "og:title", content: "Work — Aarav Mehta" },
       {
         property: "og:description",
-        content: "Selected case studies from Aarav Mehta.",
+        content: "Selected engineering projects by Aarav Mehta.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

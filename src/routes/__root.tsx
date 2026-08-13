@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Aarav Mehta is an independent studio crafting identity, digital, and product experiences for ambitious founders.",
+          "Aarav Mehta is a full-stack software engineer working in TypeScript, React, Go, and cloud infrastructure.",
       },
       { name: "author", content: "Aarav Mehta" },
       { property: "og:type", content: "website" },

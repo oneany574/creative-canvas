@@ -14,7 +14,7 @@ export const Route = createFileRoute("/login")({
       {
         name: "description",
         content:
-          "Sign in to the Aarav Mehta client portal to review deliverables, approve rounds, and track project milestones.",
+          "Sign in to the Aarav Mehta client portal to review project status, deployments, and milestones.",
       },
       { property: "og:title", content: "Client Login — Aarav Mehta" },
       {
@@ -197,7 +197,7 @@ function LoginPage() {
         <div className="relative col-span-12 hidden md:col-span-6 md:block">
           <img
             src={portrait}
-            alt="Aarav Mehta editorial portrait"
+            alt="Portrait of Aarav Mehta, software engineer"
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-x-0 bottom-0 p-10 lg:p-14">
@@ -205,7 +205,7 @@ function LoginPage() {
               "The portal is where the work quietly happens between presentations."
             </p>
             <p className="mt-4 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-              Aarav Mehta — Lisbon · New York
+              Aarav Mehta — Software engineer · Bengaluru
             </p>
           </div>
         </div>

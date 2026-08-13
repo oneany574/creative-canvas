@@ -14,12 +14,12 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Start a project with Aarav Mehta. Tell us about your company, ambition, and timeline — we reply within two business days.",
+          "Get in touch with Aarav Mehta about roles, contracts, or consulting. Tell me about the problem and timeline — I reply within two business days.",
       },
       { property: "og:title", content: "Contact — Aarav Mehta" },
       {
         property: "og:description",
-        content: "Start a project with Aarav Mehta.",
+        content: "Get in touch with Aarav Mehta.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
