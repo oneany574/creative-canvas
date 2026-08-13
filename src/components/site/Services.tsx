@@ -7,11 +7,11 @@ import work4 from "@/assets/work-4.jpg";
 import { FadeIn } from "./RevealText";
 
 const services = [
-  { n: "01", title: "Brand strategy", tags: "Positioning · Narrative · Naming", img: work3 },
-  { n: "02", title: "Identity design", tags: "Logotypes · Systems · Guidelines", img: work1 },
-  { n: "03", title: "Digital experience", tags: "Web · Product · Prototyping", img: work2 },
-  { n: "04", title: "Motion & interaction", tags: "Reels · UI motion · Direction", img: work4 },
-  { n: "05", title: "Creative technology", tags: "WebGL · Interactive · AI tooling", img: work2 },
+  { n: "01", title: "Frontend engineering", tags: "React · TypeScript · Design systems", img: work1 },
+  { n: "02", title: "Backend & APIs", tags: "Node.js · Go · GraphQL · Postgres", img: work2 },
+  { n: "03", title: "Cloud & DevOps", tags: "AWS · Kubernetes · Terraform · CI/CD", img: work3 },
+  { n: "04", title: "Data & performance", tags: "Kafka · ClickHouse · Profiling", img: work4 },
+  { n: "05", title: "Technical leadership", tags: "Architecture · Review · Mentoring", img: work2 },
 ];
 
 export function Services() {
@@ -24,22 +24,22 @@ export function Services() {
         <div className="mb-12 grid grid-cols-12 items-end gap-6 md:mb-24">
           <div className="col-span-12 md:col-span-6">
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-              [ 03 — Practice ]
+              [ 03 — Capabilities ]
             </p>
             <FadeIn>
               <h2 className="mt-4 font-display text-[clamp(2.5rem,7vw,6rem)] leading-[0.95] tracking-[-0.02em]">
-                A studio for the
+                Across the
                 <br />
-                <em className="italic text-accent">whole surface.</em>
+                <em className="italic text-accent">whole stack.</em>
               </h2>
             </FadeIn>
           </div>
           <div className="col-span-12 md:col-span-5 md:col-start-8">
             <FadeIn delay={0.15}>
               <p className="max-w-md text-muted-foreground">
-                Five overlapping disciplines under one direction. We move between
-                them fluidly so the brand, product, and experience arrive as one
-                coherent thing.
+                Five areas I work in daily. Owning the path from schema to
+                interface means fewer handoffs, fewer surprises, and systems that
+                stay coherent as they grow.
               </p>
             </FadeIn>
           </div>
