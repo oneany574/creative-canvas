@@ -8,6 +8,7 @@ const links = [
   { label: "Capabilities", href: "/#services", route: false },
   { label: "Journal", href: "/blog", route: true },
   { label: "Contact", href: "/contact", route: true },
+  { label: "Résumé", href: "/resume.pdf", route: false, download: "Aarav-Mehta-Resume.pdf" },
   { label: "Login", href: "/login", route: true },
 ];
 
@@ -61,6 +62,7 @@ export function Navigation() {
                 <a
                   key={l.href}
                   href={l.href}
+                  download={l.download}
                   data-cursor="View"
                   className="group relative text-sm text-foreground/85 transition-colors hover:text-foreground"
                 >
@@ -120,6 +122,7 @@ export function Navigation() {
                 <motion.a
                   key={l.href}
                   href={l.href}
+                  download={l.download}
                   onClick={() => setOpen(false)}
                   initial={{ y: 40, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
