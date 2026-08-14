@@ -8,6 +8,7 @@ const links = [
   { label: "Capabilities", href: "/#services", route: false },
   { label: "Journal", href: "/blog", route: true },
   { label: "Contact", href: "/contact", route: true },
+  { label: "Résumé", href: "/resume.pdf", route: false, download: "Aarav-Mehta-Resume.pdf" },
   { label: "Login", href: "/login", route: true },
 ];
 
