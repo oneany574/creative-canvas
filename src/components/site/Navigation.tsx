@@ -62,6 +62,7 @@ export function Navigation() {
                 <a
                   key={l.href}
                   href={l.href}
+                  download={l.download}
                   data-cursor="View"
                   className="group relative text-sm text-foreground/85 transition-colors hover:text-foreground"
                 >
