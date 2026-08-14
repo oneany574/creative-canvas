@@ -122,6 +122,7 @@ export function Navigation() {
                 <motion.a
                   key={l.href}
                   href={l.href}
+                  download={l.download}
                   onClick={() => setOpen(false)}
                   initial={{ y: 40, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
