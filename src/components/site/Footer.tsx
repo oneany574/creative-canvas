@@ -30,7 +30,7 @@ export function Footer() {
             <li><a href="#" className="hover:text-accent">GitHub ↗</a></li>
             <li><a href="#" className="hover:text-accent">LinkedIn ↗</a></li>
             <li><a href="#" className="hover:text-accent">Stack Overflow ↗</a></li>
-            <li><a href="#" className="hover:text-accent">Résumé (PDF) ↗</a></li>
+            <li><a href="/resume.pdf" download="Aarav-Mehta-Resume.pdf" className="hover:text-accent">Résumé (PDF) ↗</a></li>
           </ul>
         </div>
 
