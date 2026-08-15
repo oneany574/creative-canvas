@@ -48,9 +48,9 @@ export function Testimonials() {
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                 className="font-display text-[clamp(1.75rem,4vw,3.75rem)] leading-[1.08] tracking-[-0.02em]"
               >
-                <span className="text-accent">"</span>
+                <span className="text-primary">"</span>
                 {q.q}
-                <span className="text-accent">"</span>
+                <span className="text-primary">"</span>
               </motion.blockquote>
             </AnimatePresence>
 

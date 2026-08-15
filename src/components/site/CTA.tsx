@@ -8,7 +8,7 @@ export function CTA() {
       className="relative overflow-hidden border-t border-border py-32 md:py-56"
     >
       <div className="pointer-events-none absolute inset-0 -z-0">
-        <div className="absolute left-1/2 top-1/2 h-[120vmin] w-[120vmin] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/20 blur-[120px]" />
+        <div className="absolute left-1/2 top-1/2 h-[120vmin] w-[120vmin] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-[120px]" />
       </div>
       <div className="relative mx-auto max-w-[1600px] px-6 md:px-10">
         <div className="mb-10 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">

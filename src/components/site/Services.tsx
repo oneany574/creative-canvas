@@ -30,7 +30,7 @@ export function Services() {
               <h2 className="mt-4 font-display text-[clamp(2.5rem,7vw,6rem)] leading-[0.95] tracking-[-0.02em]">
                 Across the
                 <br />
-                <em className="italic text-accent">whole stack.</em>
+                <em className="italic text-primary">whole stack.</em>
               </h2>
             </FadeIn>
           </div>

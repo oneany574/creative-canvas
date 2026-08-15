@@ -15,10 +15,10 @@ export function Footer() {
             Navigate
           </div>
           <ul className="space-y-2 text-sm">
-            <li><a href="#work" className="hover:text-accent">Projects</a></li>
-            <li><a href="#services" className="hover:text-accent">Capabilities</a></li>
-            <li><a href="#studio" className="hover:text-accent">About</a></li>
-            <li><a href="#contact" className="hover:text-accent">Contact</a></li>
+            <li><a href="#work" className="hover:text-primary">Projects</a></li>
+            <li><a href="#services" className="hover:text-primary">Capabilities</a></li>
+            <li><a href="#studio" className="hover:text-primary">About</a></li>
+            <li><a href="#contact" className="hover:text-primary">Contact</a></li>
           </ul>
         </div>
 
@@ -27,10 +27,10 @@ export function Footer() {
             Elsewhere
           </div>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:text-accent">GitHub ↗</a></li>
-            <li><a href="#" className="hover:text-accent">LinkedIn ↗</a></li>
-            <li><a href="#" className="hover:text-accent">Stack Overflow ↗</a></li>
-            <li><a href="/resume.pdf" download="Aarav-Mehta-Resume.pdf" className="hover:text-accent">Résumé (PDF) ↗</a></li>
+            <li><a href="#" className="hover:text-primary">GitHub ↗</a></li>
+            <li><a href="#" className="hover:text-primary">LinkedIn ↗</a></li>
+            <li><a href="#" className="hover:text-primary">Stack Overflow ↗</a></li>
+            <li><a href="/resume.pdf" download="Aarav-Mehta-Resume.pdf" className="hover:text-primary">Résumé (PDF) ↗</a></li>
           </ul>
         </div>
 

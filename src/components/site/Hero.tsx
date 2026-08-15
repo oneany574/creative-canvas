@@ -28,7 +28,7 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-[1600px] grid-cols-12 gap-6 px-6 md:px-10">
         <div className="col-span-12 lg:col-span-8">
           <h1 className="font-display text-[clamp(3.25rem,10.5vw,11rem)] leading-[0.92] tracking-[-0.03em]">
-            {["I build", "software that", <em key="i" className="italic text-accent">scales.</em>].map(
+            {["I build", "software that", <em key="i" className="italic text-primary">scales.</em>].map(
               (line, i) => (
                 <span key={i} className="block overflow-hidden">
                   <motion.span
@@ -97,15 +97,16 @@ export function Hero() {
         >
           <img
             src={heroImg}
-            alt="A dark developer workstation with code on screen lit by warm ambient light"
+            alt="A bright minimal desk with a laptop showing code, lit by soft daylight"
             width={1600}
             height={900}
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-x-6 bottom-6 flex items-end justify-between font-mono text-[10px] uppercase tracking-widest text-white/80 md:inset-x-10 md:bottom-10">
-            <span>◐ Currently — Lead engineer, Northbeam</span>
-            <span>TS · React · Go · K8s</span>
+          <div className="absolute inset-x-6 bottom-6 flex items-end justify-between gap-3 font-mono text-[10px] uppercase tracking-widest text-foreground/80 md:inset-x-10 md:bottom-10">
+            <span className="rounded-full bg-card/80 px-3 py-1.5 backdrop-blur-sm">◐ Currently — Lead engineer, Northbeam</span>
+            <span className="rounded-full bg-card/80 px-3 py-1.5 backdrop-blur-sm">TS · React · Go · K8s</span>
           </div>
+
         </motion.div>
       </motion.div>
 
