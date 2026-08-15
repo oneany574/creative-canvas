@@ -28,7 +28,7 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-[1600px] grid-cols-12 gap-6 px-6 md:px-10">
         <div className="col-span-12 lg:col-span-8">
           <h1 className="font-display text-[clamp(3.25rem,10.5vw,11rem)] leading-[0.92] tracking-[-0.03em]">
-            {["I build", "software that", <em key="i" className="italic text-accent">scales.</em>].map(
+            {["I build", "software that", <em key="i" className="italic text-primary">scales.</em>].map(
               (line, i) => (
                 <span key={i} className="block overflow-hidden">
                   <motion.span

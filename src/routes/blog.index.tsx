@@ -196,7 +196,7 @@ function BlogIndex() {
                       data-cursor="Filter"
                       className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs transition-colors ${
                         tag === t
-                          ? "bg-accent text-accent-foreground"
+                          ? "bg-primary text-primary-foreground"
                           : "border border-border text-muted-foreground hover:border-foreground/40 hover:text-foreground"
                       }`}
                     >

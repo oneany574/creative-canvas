@@ -112,7 +112,7 @@ function LoginPage() {
                   className="mt-3 w-full border-b border-foreground/20 bg-transparent py-3 text-base outline-none placeholder:text-muted-foreground/60 focus:border-foreground disabled:opacity-50"
                 />
                 {errors.email && (
-                  <p className="mt-2 text-xs text-accent">{errors.email}</p>
+                  <p className="mt-2 text-xs text-primary">{errors.email}</p>
                 )}
               </div>
 
@@ -142,7 +142,7 @@ function LoginPage() {
                   className="mt-3 w-full border-b border-foreground/20 bg-transparent py-3 text-base outline-none placeholder:text-muted-foreground/60 focus:border-foreground disabled:opacity-50"
                 />
                 {errors.password && (
-                  <p className="mt-2 text-xs text-accent">{errors.password}</p>
+                  <p className="mt-2 text-xs text-primary">{errors.password}</p>
                 )}
               </div>
 
@@ -164,7 +164,7 @@ function LoginPage() {
               </div>
 
               {status === "error" && errorMsg && (
-                <p className="text-sm text-accent">{errorMsg}</p>
+                <p className="text-sm text-primary">{errorMsg}</p>
               )}
 
               <button

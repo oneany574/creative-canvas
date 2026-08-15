@@ -25,7 +25,7 @@ export function Process() {
             <h2 className="mt-4 font-display text-[clamp(2.5rem,7vw,6rem)] leading-[0.95] tracking-[-0.02em]">
               Five steps,
               <br />
-              <em className="italic text-accent">one loop.</em>
+              <em className="italic text-primary">one loop.</em>
             </h2>
           </div>
           <p className="col-span-12 max-w-md text-muted-foreground md:col-span-5 md:col-start-8">
@@ -39,7 +39,7 @@ export function Process() {
             <div className="sticky top-32 h-[60vh] w-px overflow-hidden bg-border">
               <motion.div
                 style={{ height: barY }}
-                className="absolute left-0 top-0 w-px bg-accent"
+                className="absolute left-0 top-0 w-px bg-primary"
               />
             </div>
           </div>

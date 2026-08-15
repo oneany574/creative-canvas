@@ -80,8 +80,8 @@ export function Navigation() {
               className="group inline-flex items-center gap-3 rounded-full border border-foreground/20 px-5 py-2.5 text-sm transition-colors hover:border-foreground/60"
             >
               <span className="relative h-2 w-2">
-                <span className="absolute inset-0 rounded-full bg-accent" />
-                <span className="absolute inset-0 animate-ping rounded-full bg-accent" />
+                <span className="absolute inset-0 rounded-full bg-primary" />
+                <span className="absolute inset-0 animate-ping rounded-full bg-primary" />
               </span>
               Start a project
             </MagneticButton>
