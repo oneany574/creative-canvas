@@ -97,15 +97,16 @@ export function Hero() {
         >
           <img
             src={heroImg}
-            alt="A dark developer workstation with code on screen lit by warm ambient light"
+            alt="A bright minimal desk with a laptop showing code, lit by soft daylight"
             width={1600}
             height={900}
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-x-6 bottom-6 flex items-end justify-between font-mono text-[10px] uppercase tracking-widest text-white/80 md:inset-x-10 md:bottom-10">
-            <span>◐ Currently — Lead engineer, Northbeam</span>
-            <span>TS · React · Go · K8s</span>
+          <div className="absolute inset-x-6 bottom-6 flex items-end justify-between gap-3 font-mono text-[10px] uppercase tracking-widest text-foreground/80 md:inset-x-10 md:bottom-10">
+            <span className="rounded-full bg-card/80 px-3 py-1.5 backdrop-blur-sm">◐ Currently — Lead engineer, Northbeam</span>
+            <span className="rounded-full bg-card/80 px-3 py-1.5 backdrop-blur-sm">TS · React · Go · K8s</span>
           </div>
+
         </motion.div>
       </motion.div>
 
