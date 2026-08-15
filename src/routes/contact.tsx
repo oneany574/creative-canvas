@@ -287,12 +287,12 @@ function ContactPage() {
                     className="mt-3 w-full resize-y bg-transparent border-b border-foreground/20 py-3 text-base outline-none focus:border-foreground placeholder:text-muted-foreground/60 disabled:opacity-50"
                   />
                   {errors.message && (
-                    <p className="mt-2 text-xs text-primary">{errors.message}</p>
+                    <p className="mt-2 text-xs text-destructive">{errors.message}</p>
                   )}
                 </div>
 
                 {status === "error" && errorMsg && (
-                  <p className="text-sm text-primary">{errorMsg}</p>
+                  <p className="text-sm text-destructive">{errorMsg}</p>
                 )}
 
                 <div className="flex flex-wrap items-center gap-4 pt-4">
@@ -370,7 +370,7 @@ function Field({
         maxLength={255}
         className="mt-3 w-full bg-transparent border-b border-foreground/20 py-3 text-base outline-none focus:border-foreground placeholder:text-muted-foreground/60 disabled:opacity-50"
       />
-      {error && <p className="mt-2 text-xs text-primary">{error}</p>}
+      {error && <p className="mt-2 text-xs text-destructive">{error}</p>}
     </div>
   );
 }
